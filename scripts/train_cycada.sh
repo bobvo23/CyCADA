@@ -3,7 +3,7 @@ seed=0
 #----------------# Experiments -------------
 # M->U
 MODEL_NUM=1_${seed}
-dataroot="../data/mnist_USPS"
+dataroot="./data/mnist_USPS"
 dataset_mode="class_unaligned"
 c_A_name="lenet_mnist_acc_97.5000.pt" # acc 91 in U
 netC="lenet"
@@ -22,7 +22,7 @@ num_threads=4
 
 # U->M
 MODEL_NUM=2_${seed}
-dataroot="../data/mnist_USPS"
+dataroot="./data/mnist_USPS"
 dataset_mode="class_unaligned"
 c_A_name="lenet_usps_acc_97.1599.pt" # acc 68 in m
 netC="lenet"
